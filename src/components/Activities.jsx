@@ -1,12 +1,10 @@
 import React from 'react'
 import { useI18n } from '../i18n'
+import mock from '../data/mockData'
 
 export default function Activities () {
   const { t } = useI18n()
-  const items = [
-    { id: 'workshop', title: t('activities.workshop.title'), date: '2025-12-01' },
-    { id: 'talk', title: t('activities.talk.title'), date: '2026-01-15' }
-  ]
+  const items = mock.activities
   return (
     <section id="activities" className="activities" aria-label={t('activities.title')}>
       <div className="container">
