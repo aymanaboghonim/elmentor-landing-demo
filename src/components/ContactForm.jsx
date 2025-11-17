@@ -15,11 +15,15 @@ export default function ContactForm () {
       })
       if (res.ok) {
         setStatus('success')
+        // Track event for successful submissions
+        import('../lib/analytics').then(({ default: analytics }) => analytics.trackEvent('form_submit', { result: 'success' }))
       } else {
         setStatus('error')
+        import('../lib/analytics').then(({ default: analytics }) => analytics.trackEvent('form_submit', { result: 'error' }))
       }
     } catch (err) {
       setStatus('error')
+      import('../lib/analytics').then(({ default: analytics }) => analytics.trackEvent('form_submit', { result: 'error' }))
     }
   }
   return (
