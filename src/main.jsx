@@ -2,6 +2,7 @@ import React from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App'
 import './styles/global.css'
+import './styles/contact.css'
 import { initSmoothScroll } from './lib/smoothScroll'
 
 // Initialize smooth-scroll on client
