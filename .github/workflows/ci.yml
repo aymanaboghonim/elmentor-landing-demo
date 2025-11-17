@@ -35,11 +35,8 @@ jobs:
                     node-version: 20
             - run: npm install
             - run: npm run build
-            - name: Preview server
-                run: 'npm run preview & sleep 3'
             - name: Lighthouse smoke (headless)
-                uses: treosh/lighthouse-ci-action@v10
+                uses: treosh/lighthouse-ci-action@v12
                 with:
-                    urls: |
-                        http://127.0.0.1:4173/
+                    staticDistDir: ./dist
                     runs: 1
