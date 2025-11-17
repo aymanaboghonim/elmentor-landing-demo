@@ -37,7 +37,7 @@ jobs:
             - name: Preview server
               run: npm run preview & sleep 3
             - name: Lighthouse smoke (headless)
-              uses: treosh/lighthouse-ci-action@v10
+              uses: treosh/lighthouse-ci-action@v12
               with:
                   url: "http://127.0.0.1:5173"
                   budget: '{"performance":60}'
