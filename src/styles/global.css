@@ -22,6 +22,7 @@ html[dir='rtl']{direction:rtl}
 	--muted:#6b7280;
 	--accent-600: #2a9d8f;
 	--accent-800: #237a6b;
+	--accent-focus: rgba(42,157,143,0.1); /* 10% opacity of accent-600 for focus states */
 	--radius: 8px;
 	--gap: 1rem;
 }

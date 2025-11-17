@@ -32,7 +32,7 @@ The contact form uses [Formspree](https://formspree.io) for form submissions wit
 2. Create a new form in your Formspree dashboard
 3. Copy your form ID (it looks like `abc123xyz`)
 4. Open `src/components/ContactForm.jsx`
-5. Replace `'your-form-id'` with your actual Formspree form ID on line 45:
+5. Replace `'your-form-id'` with your actual Formspree form ID on line 50:
    ```javascript
    const formId = 'abc123xyz' // Replace with your Formspree form ID
    ```

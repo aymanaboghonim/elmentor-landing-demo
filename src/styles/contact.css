@@ -4,7 +4,7 @@
 .contact form{max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:1.5rem}
 .contact label{display:flex;flex-direction:column;gap:0.5rem;font-weight:500;color:var(--text-color)}
 .contact input,.contact textarea{padding:0.75rem 1rem;border:1px solid #d1d5db;border-radius:var(--radius);font-family:inherit;font-size:1rem;transition:border-color 0.2s,box-shadow 0.2s;width:100%}
-.contact input:focus,.contact textarea:focus{border-color:var(--accent-600);box-shadow:0 0 0 3px rgba(42,157,143,0.1);outline:none}
+.contact input:focus,.contact textarea:focus{border-color:var(--accent-600);box-shadow:0 0 0 3px var(--accent-focus);outline:none}
 .contact input[aria-invalid="true"],.contact textarea[aria-invalid="true"]{border-color:#dc2626}
 .contact textarea{min-height:120px;resize:vertical}
 .contact button[type="submit"]{padding:0.875rem 2rem;background:var(--accent-600);color:#fff;border:none;border-radius:var(--radius);font-size:1rem;font-weight:600;cursor:pointer;transition:background 0.2s,transform 0.1s;align-self:flex-start}
