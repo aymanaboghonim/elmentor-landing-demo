@@ -90,6 +90,13 @@
 - **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
 - **FR-005**: System MUST [behavior, e.g., "log all security events"]
 
+## Constitution Requirements (mandatory)
+
+- Documentation updates in `docs/` when public behavior or APIs change.
+- Tests and linters MUST be runnable on CI and pass on the latest LTS runtime.
+- List known external dependencies and verify they are not marked deprecated.
+- For UI changes, include a11y checks and visual validation steps.
+
 *Example of marking unclear requirements:*
 
 - **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]

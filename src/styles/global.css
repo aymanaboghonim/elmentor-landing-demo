@@ -1,0 +1,49 @@
+:root{--max-width:1100px;--accent:#2a9d8f}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;padding:0;color:#111}
+.container{max-width:var(--max-width);margin:0 auto;padding:0 1rem}
+nav.nav{display:flex;justify-content:space-between;align-items:center;padding:0.5rem 0;background:#fff;position:sticky;top:0}
+.nav-list{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
+.hero{padding:3rem 0;background:linear-gradient(140deg,#dff9f2,white)}
+.hero-inner{max-width:var(--max-width);margin:0 auto}
+.cta{display:inline-block;padding:0.5rem 1rem;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
+.section{padding:3rem 0}
+.footer{padding:2rem 0;background:#f2f3f4}
+/* RTL support */
+html[dir='rtl']{direction:rtl}
+
+/* Basic accessible focus states */
+:focus{outline:3px solid rgba(42,157,143,.25);outline-offset:2px}
+
+/* Design tokens */
+:root{
+	--bg-color:#ffffff;
+	--text-color:#112;
+	--muted:#6b7280;
+	--accent-600: #2a9d8f;
+	--accent-800: #237a6b;
+	--radius: 8px;
+	--gap: 1rem;
+}
+
+/* Improved hero */
+.hero{padding:4rem 0; background: linear-gradient(180deg, rgba(42,157,143,0.06), rgba(255,255,255,1));}
+.hero-inner{display:flex;flex-direction:column;gap:var(--gap);align-items:flex-start;padding:2rem 1rem}
+.hero h1{font-size:clamp(1.8rem, 3.2vw, 3rem);line-height:1.05;margin:0}
+.hero p{color:var(--muted);max-width:40ch}
+.cta{padding:0.75rem 1.2rem;border-radius:999px;background:var(--accent-600);box-shadow:0 6px 16px rgba(42,157,143,0.08)}
+
+/* Navbar polish */
+.nav{padding:1rem 0; background:#fff;border-bottom:1px solid rgba(0,0,0,0.04)}
+.nav .logo{font-weight:700;color:var(--accent-800);font-size:1.1rem}
+.nav-list a{color:var(--text-color);text-decoration:none;padding:0.25rem 0.5rem}
+.nav-list a:hover{color:var(--accent-600)}
+
+/* Responsive nav */
+@media (max-width:720px){
+	.nav-list{display:none}
+}
+
+/* Footer */
+.site-footer{background:#f8fafc;padding:2rem 0;margin-top:2rem}
+.site-footer .social a{margin-left:1rem;text-decoration:none;color:var(--muted)}

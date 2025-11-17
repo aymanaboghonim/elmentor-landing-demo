@@ -31,6 +31,14 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
+The plan MUST describe how it satisfies the Constitution. The following checks are required in the plan and verified by the `/speckit.plan` command before starting implementation:
+
+- Documentation: If the feature changes public behavior or UI, the plan MUST list doc updates and a `docs/` path.
+- CI & Deployment: Identify whether a GitHub Pages workflow is affected and confirm the use of LTS toolchains and official Actions.
+- Tests: List unit and integration tests and how they fulfil acceptance criteria; tests MUST be runnable in CI with coverage thresholds.
+- Dependencies: List major dependencies and confirm they are maintained and not deprecated.
+- Performance: If feature affects load/perf, list measurable goals and tests (Lighthouse smoke test or custom checks).
+
 [Gates determined based on constitution file]
 
 ## Project Structure

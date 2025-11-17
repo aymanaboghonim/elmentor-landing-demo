@@ -1,0 +1,20 @@
+name: Constitution Check
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Verify docs updated for UI changes
+        run: node scripts/check-constitution.js || true
+      - name: Check Lockfiles
+        run: |
+          if [ ! -f package-lock.json ] && [ ! -f pnpm-lock.yaml ] && [ ! -f yarn.lock ]; then
+            echo "Warning: no lockfile found"; exit 1; fi

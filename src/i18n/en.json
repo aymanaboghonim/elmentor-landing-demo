@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "hero": "Home",
+    "about": "About",
+    "circles": "Circles",
+    "activities": "Activities",
+    "founder": "Founder",
+    "news": "News",
+    "contact": "Contact/Join",
+    "lang": "العربية"
+  },
+  "hero": { "title": "Elmentor Program", "subtitle": "A mentorship community for growth", "cta": "Join Now" },
+  "about": { "title": "About Elmentor", "description": "We support learners and mentors in a collaborative community." },
+  "circles": { "title": "Circles", "design": { "title": "Design", "summary": "Designers support" }, "dev": { "title": "Developer", "summary": "Developers support" } },
+  "activities": { "title": "Activities & Benefits", "workshop": { "title": "Workshop" }, "talk": { "title": "Guest Talk" } },
+  "founder": { "title": "Founder Story", "story": "Founder story content here." },
+  "news": { "title": "News & Updates", "sample": { "title": "Launch Announcement" } },
+  "contact": { "title": "Contact & Join", "name": "Full name", "email": "Email", "message": "How can we help?", "submit": "Send", "success": "Thanks — we'll be in touch!", "error": "An error occurred" },
+  "contact.nojs": "JavaScript is disabled — please enable it or email us at hello@elmentor.org",
+  "footer": { "copy": "© Elmentor" }
+}

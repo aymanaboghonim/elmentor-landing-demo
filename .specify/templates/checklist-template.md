@@ -32,6 +32,13 @@
 - [ ] CHK005 Item with specific criteria
 - [ ] CHK006 Final item in this category
 
+## Constitution Check (sample)
+
+- [ ] CHK-C1: Documentation updated (docs/ or README) if public behavior changed
+- [ ] CHK-C2: CI uses LTS toolchain and pinned Actions
+- [ ] CHK-C3: Linting & tests pass locally and in CI
+- [ ] CHK-C4: No deprecated dependencies introduced
+
 ## Notes
 
 - Check items off as completed: `[x]`

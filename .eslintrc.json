@@ -1,0 +1,16 @@
+{
+  "env": {"browser": true, "es2021": true},
+  "overrides": [
+    {
+      "files": ["scripts/**/*.js"],
+      "env": { "node": true, "es2021": true },
+      "rules": {
+        "no-undef": "off"
+      }
+    }
+  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {"ecmaFeatures": {"jsx": true}, "ecmaVersion": 12, "sourceType": "module"},
+  "rules": {"react/react-in-jsx-scope": "off", "react/prop-types": "off"},
+  "settings": {"react": {"version": "detect"}}
+}

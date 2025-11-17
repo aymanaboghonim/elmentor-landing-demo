@@ -25,4 +25,8 @@ Auto-generated from all feature plans. Last updated: [DATE]
 [LAST 3 FEATURES AND WHAT THEY ADDED]
 
 <!-- MANUAL ADDITIONS START -->
+## Constitution & CI
+
+- The repository MUST follow the Constitution: CI uses pinned LTS versions, PRs MUST update docs on behaviour changes, and no deprecated dependencies are permitted.
+
 <!-- MANUAL ADDITIONS END -->

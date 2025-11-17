@@ -51,6 +51,8 @@ description: "Task list template for feature implementation"
 - [ ] T001 Create project structure per implementation plan
 - [ ] T002 Initialize [language] project with [framework] dependencies
 - [ ] T003 [P] Configure linting and formatting tools
+- [ ] T003 [P] Configure linting and formatting tools (pre-commit hooks)
+- [ ] T003b Ensure CI uses official LTS toolchains and pinned GitHub Actions
 
 ---
 
@@ -68,6 +70,7 @@ Examples of foundational tasks (adjust based on your project):
 - [ ] T007 Create base models/entities that all stories depend on
 - [ ] T008 Configure error handling and logging infrastructure
 - [ ] T009 Setup environment configuration management
+- [ ] T009b Configure GitHub Actions for Pages deployment (build, test, lighthouse smoke test)
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 

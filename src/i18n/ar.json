@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "hero": "[AUTOT] Home",
+    "about": "[AUTOT] About",
+    "circles": "[AUTOT] Circles",
+    "activities": "[AUTOT] Activities",
+    "founder": "[AUTOT] Founder",
+    "news": "[AUTOT] News",
+    "contact": "[AUTOT] Contact/Join",
+    "lang": "[AUTOT] العربية"
+  },
+  "hero": {
+    "title": "[AUTOT] Elmentor Program",
+    "subtitle": "[AUTOT] A mentorship community for growth",
+    "cta": "[AUTOT] Join Now"
+  },
+  "about": {
+    "title": "[AUTOT] About Elmentor",
+    "description": "[AUTOT] We support learners and mentors in a collaborative community."
+  },
+  "circles": {
+    "title": "[AUTOT] Circles",
+    "design": {
+      "title": "[AUTOT] Design",
+      "summary": "[AUTOT] Designers support"
+    },
+    "dev": {
+      "title": "[AUTOT] Developer",
+      "summary": "[AUTOT] Developers support"
+    }
+  },
+  "activities": {
+    "title": "[AUTOT] Activities & Benefits",
+    "workshop": {
+      "title": "[AUTOT] Workshop"
+    },
+    "talk": {
+      "title": "[AUTOT] Guest Talk"
+    }
+  },
+  "founder": {
+    "title": "[AUTOT] Founder Story",
+    "story": "[AUTOT] Founder story content here."
+  },
+  "news": {
+    "title": "[AUTOT] News & Updates",
+    "sample": {
+      "title": "[AUTOT] Launch Announcement"
+    }
+  },
+  "contact": {
+    "title": "[AUTOT] Contact & Join",
+    "name": "[AUTOT] Full name",
+    "email": "[AUTOT] Email",
+    "message": "[AUTOT] How can we help?",
+    "submit": "[AUTOT] Send",
+    "success": "[AUTOT] Thanks — we'll be in touch!",
+    "error": "[AUTOT] An error occurred"
+  },
+  "contact.nojs": "[AUTOT] JavaScript is disabled — please enable it or email us at hello@elmentor.org",
+  "footer": {
+    "copy": "[AUTOT] © Elmentor"
+  }
+}
