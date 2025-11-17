@@ -107,11 +107,12 @@ export default function ContactForm () {
           </label>
           
           <label htmlFor="contact-message">
-            {t('contact.message')}
+            {t('contact.message')} (optional)
             <textarea 
               id="contact-message"
               name="message"
               rows="5"
+              aria-required="false"
               required
               aria-invalid={errors.message ? 'true' : 'false'}
               aria-describedby={errors.message ? 'message-error' : undefined}
