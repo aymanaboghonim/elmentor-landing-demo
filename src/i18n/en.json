@@ -15,7 +15,20 @@
   "activities": { "title": "Activities & Benefits", "workshop": { "title": "Workshop" }, "talk": { "title": "Guest Talk" } },
   "founder": { "title": "Founder Story", "story": "Founder story content here." },
   "news": { "title": "News & Updates", "sample": { "title": "Launch Announcement" } },
-  "contact": { "title": "Contact & Join", "name": "Full name", "email": "Email", "message": "How can we help?", "submit": "Send", "success": "Thanks — we'll be in touch!", "error": "An error occurred" },
+  "contact": { 
+    "title": "Contact & Join", 
+    "name": "Full name", 
+    "email": "Email", 
+    "message": "How can we help?", 
+    "submit": "Send", 
+    "sending": "Sending...",
+    "success": "Thanks — we'll be in touch!", 
+    "error": "An error occurred. Please try again.",
+    "errors": {
+      "name": "Name must be at least 2 characters",
+      "email": "Please enter a valid email address"
+    }
+  },
   "contact.nojs": "JavaScript is disabled — please enable it or email us at hello@elmentor.org",
   "footer": { "copy": "© Elmentor" }
 }

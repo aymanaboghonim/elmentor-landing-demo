@@ -54,8 +54,13 @@
     "email": "[AUTOT] Email",
     "message": "[AUTOT] How can we help?",
     "submit": "[AUTOT] Send",
+    "sending": "[AUTOT] Sending...",
     "success": "[AUTOT] Thanks — we'll be in touch!",
-    "error": "[AUTOT] An error occurred"
+    "error": "[AUTOT] An error occurred. Please try again.",
+    "errors": {
+      "name": "[AUTOT] Name must be at least 2 characters",
+      "email": "[AUTOT] Please enter a valid email address"
+    }
   },
   "contact.nojs": "[AUTOT] JavaScript is disabled — please enable it or email us at hello@elmentor.org",
   "footer": {
