@@ -15,14 +15,14 @@ jobs:
         steps:
             - uses: actions/checkout@v4
             - name: Use Node
-              uses: actions/setup-node@v4
-              with:
-                  node-version: ${{ matrix.node-version }}
+                uses: actions/setup-node@v4
+                with:
+                    node-version: ${{ matrix.node-version }}
             - run: npm install
             - run: npm run lint
             - run: npm test
             - name: i18n key coverage
-              run: npm run i18n:check
+                run: npm run i18n:check
 
     lighthouse:
         runs-on: ubuntu-latest
@@ -30,16 +30,16 @@ jobs:
         steps:
             - uses: actions/checkout@v4
             - name: Setup Node
-              uses: actions/setup-node@v4
-              with:
-                  node-version: 20
+                uses: actions/setup-node@v4
+                with:
+                    node-version: 20
             - run: npm install
             - run: npm run build
             - name: Preview server
-              run: npm run preview & sleep 3
+                run: 'npm run preview & sleep 3'
             - name: Lighthouse smoke (headless)
-              uses: treosh/lighthouse-ci-action@v10
-              with:
-                  urls: |
-                      - http://127.0.0.1:5173
-                  runs: 1
+                uses: treosh/lighthouse-ci-action@v10
+                with:
+                    urls: |
+                        http://127.0.0.1:4173/
+                    runs: 1
