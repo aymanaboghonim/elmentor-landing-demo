@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useI18n } from '../i18n'
+import ThemeToggle from './ThemeToggle'
 
 export default function Navbar () {
   const { t, locale, setLocale } = useI18n()
@@ -24,6 +25,7 @@ export default function Navbar () {
         <div className="lang-toggle">
           <button onClick={() => setLocale(locale === 'en' ? 'ar' : 'en')} aria-pressed={locale === 'ar'}>{t('nav.lang')}</button>
         </div>
+        <ThemeToggle />
       </div>
     </nav>
   )

@@ -10,26 +10,29 @@ import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
 import { I18nProvider } from './i18n'
 import AnalyticsConsent from './components/AnalyticsConsent'
+import { ThemeProvider } from './lib/ThemeContext'
 
 export default function App () {
   const [locale, setLocale] = useState('en')
 
   return (
-    <I18nProvider locale={locale} setLocale={setLocale}>
-      <div>
-        <Navbar />
-        <AnalyticsConsent />
-        <main>
-          <Hero />
-          <About />
-          <Circles />
-          <Activities />
-          <Founder />
-          <News />
-          <ContactForm />
-        </main>
-        <Footer />
-      </div>
-    </I18nProvider>
+    <ThemeProvider>
+      <I18nProvider locale={locale} setLocale={setLocale}>
+        <div>
+          <Navbar />
+          <AnalyticsConsent />
+          <main>
+            <Hero />
+            <About />
+            <Circles />
+            <Activities />
+            <Founder />
+            <News />
+            <ContactForm />
+          </main>
+          <Footer />
+        </div>
+      </I18nProvider>
+    </ThemeProvider>
   )
 }
