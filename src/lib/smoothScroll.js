@@ -1,0 +1,13 @@
+export function initSmoothScroll () {
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href^="#"]')
+    if (!a) return
+    const href = a.getAttribute('href')
+    if (!href || href === '#') return
+    const el = document.querySelector(href)
+    if (!el) return
+    e.preventDefault()
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    history.replaceState(null, '', href)
+  })
+}
