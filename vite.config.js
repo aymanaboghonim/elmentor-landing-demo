@@ -12,6 +12,9 @@ export default defineConfig(async () => {
     reactPlugin = null
   }
   return {
+    // Set base for GitHub Pages production builds so assets load under
+    // https://<username>.github.io/<repo>/
+    base: process.env.NODE_ENV === 'production' ? '/elmentor-landing-demo/' : '/',
     plugins: reactPlugin ? [reactPlugin()] : [],
     build: {
     chunkSizeWarningLimit: 600
