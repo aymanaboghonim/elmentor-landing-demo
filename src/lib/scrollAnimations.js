@@ -33,8 +33,8 @@ export function initScrollAnimations() {
   )
   
   animateElements.forEach((el, index) => {
-    // Add delay based on index for staggered effect
-    el.style.setProperty('--animation-delay', `${index * 0.1}s`)
+    // Add delay based on index for staggered effect, capped at 1 second
+    el.style.setProperty('--animation-delay', `${Math.min(index * 0.1, 1)}s`)
     el.classList.add('animate-on-scroll')
     observer.observe(el)
   })
