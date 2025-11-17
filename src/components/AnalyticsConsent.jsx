@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import analytics, { setConsent, hasConsent } from '../lib/analytics'
+import { setConsent, hasConsent } from '../lib/analytics'
 
 export default function AnalyticsConsent () {
   const [granted, setGranted] = useState(false)
