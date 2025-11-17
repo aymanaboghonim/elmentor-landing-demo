@@ -4,21 +4,26 @@ import { useI18n } from '../i18n'
 export default function ContactForm () {
   const { t } = useI18n()
   const [status, setStatus] = useState(null)
-  const [loading, setLoading] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
   const [errors, setErrors] = useState({})
 
   const validateForm = (formData) => {
     const newErrors = {}
-    const name = formData.get('name')
-    const email = formData.get('email')
+    const name = formData.get('name') || ''
+    const email = formData.get('email') || ''
+    const message = formData.get('message') || ''
     
-    if (!name || name.trim().length < 2) {
+    if (name.trim().length < 2) {
       newErrors.name = t('contact.errors.name') || 'Name must be at least 2 characters'
     }
     
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (!email || !emailRegex.test(email)) {
-      newErrors.email = t('contact.errors.email') || 'Please enter a valid email'
+    if (!emailRegex.test(email)) {
+      newErrors.email = t('contact.errors.email') || 'Please enter a valid email address'
+    }
+    
+    if (message.trim().length < 5) {
+      newErrors.message = t('contact.errors.message') || 'Message is too short.'
     }
     
     return newErrors
@@ -36,7 +41,7 @@ export default function ContactForm () {
     }
     
     setErrors({})
-    setLoading(true)
+    setSubmitting(true)
     setStatus(null)
     
     try {
@@ -54,13 +59,19 @@ export default function ContactForm () {
       if (res.ok) {
         setStatus('success')
         e.target.reset()
+        setErrors({})
+        setSubmitting(false)
+        // Track event for successful submissions
+        import('../lib/analytics').then(({ default: analytics }) => analytics.trackEvent('form_submit', { result: 'success' }))
       } else {
         setStatus('error')
+        setSubmitting(false)
+        import('../lib/analytics').then(({ default: analytics }) => analytics.trackEvent('form_submit', { result: 'error' }))
       }
     } catch (err) {
       setStatus('error')
-    } finally {
-      setLoading(false)
+      setSubmitting(false)
+      import('../lib/analytics').then(({ default: analytics }) => analytics.trackEvent('form_submit', { result: 'error' }))
     }
   }
 
@@ -79,7 +90,7 @@ export default function ContactForm () {
               aria-invalid={errors.name ? 'true' : 'false'}
               aria-describedby={errors.name ? 'name-error' : undefined}
             />
-            {errors.name && <span id="name-error" className="field-error">{errors.name}</span>}
+            {errors.name && <span id="name-error" className="field-error" role="alert">{errors.name}</span>}
           </label>
           
           <label htmlFor="contact-email">
@@ -92,7 +103,7 @@ export default function ContactForm () {
               aria-invalid={errors.email ? 'true' : 'false'}
               aria-describedby={errors.email ? 'email-error' : undefined}
             />
-            {errors.email && <span id="email-error" className="field-error">{errors.email}</span>}
+            {errors.email && <span id="email-error" className="field-error" role="alert">{errors.email}</span>}
           </label>
           
           <label htmlFor="contact-message">
@@ -101,12 +112,16 @@ export default function ContactForm () {
               id="contact-message"
               name="message"
               rows="5"
+              required
+              aria-invalid={errors.message ? 'true' : 'false'}
+              aria-describedby={errors.message ? 'message-error' : undefined}
             />
+            {errors.message && <span id="message-error" className="field-error" role="alert">{errors.message}</span>}
           </label>
           
-          <button type="submit" disabled={loading}>
-            {loading && <span className="loading" aria-hidden="true"></span>}
-            {loading ? (t('contact.sending') || 'Sending...') : t('contact.submit')}
+          <button type="submit" disabled={submitting} aria-busy={submitting}>
+            {submitting && <span className="loading" aria-hidden="true"></span>}
+            {submitting ? (t('contact.sending') || 'Sending...') : t('contact.submit')}
           </button>
         </form>
         

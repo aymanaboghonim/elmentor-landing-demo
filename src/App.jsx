@@ -9,6 +9,7 @@ import News from './components/News'
 import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
 import { I18nProvider } from './i18n'
+import AnalyticsConsent from './components/AnalyticsConsent'
 
 export default function App () {
   const [locale, setLocale] = useState('en')
@@ -17,6 +18,7 @@ export default function App () {
     <I18nProvider locale={locale} setLocale={setLocale}>
       <div>
         <Navbar />
+        <AnalyticsConsent />
         <main>
           <Hero />
           <About />

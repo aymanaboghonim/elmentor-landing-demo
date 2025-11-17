@@ -26,7 +26,8 @@
     "error": "An error occurred. Please try again.",
     "errors": {
       "name": "Name must be at least 2 characters",
-      "email": "Please enter a valid email address"
+      "email": "Please enter a valid email address",
+      "message": "Message must be at least 5 characters"
     }
   },
   "contact.nojs": "JavaScript is disabled — please enable it or email us at hello@elmentor.org",
