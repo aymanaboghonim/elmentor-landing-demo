@@ -25,6 +25,15 @@ html[dir='rtl']{direction:rtl}
 	--accent-focus: rgba(42,157,143,0.1); /* 10% opacity of accent-600 for focus states */
 	--radius: 8px;
 	--gap: 1rem;
+	/* Error state colors */
+	--error-border: #dc2626;
+	--error-text: #991b1b;
+	--error-bg: #fee2e2;
+	--error-bg-border: #fca5a5;
+	/* Success state colors */
+	--success-bg: #d1fae5;
+	--success-text: #065f46;
+	--success-border: #6ee7b7;
 }
 
 /* Improved hero */

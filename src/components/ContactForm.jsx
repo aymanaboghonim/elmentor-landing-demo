@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useI18n } from '../i18n'
 
 export default function ContactForm () {
@@ -6,6 +6,16 @@ export default function ContactForm () {
   const [status, setStatus] = useState(null)
   const [submitting, setSubmitting] = useState(false)
   const [errors, setErrors] = useState({})
+
+  // Auto-dismiss success toast after 5 seconds
+  useEffect(() => {
+    if (status === 'success') {
+      const timer = setTimeout(() => {
+        setStatus(null)
+      }, 5000)
+      return () => clearTimeout(timer)
+    }
+  }, [status])
 
   const validateForm = (formData) => {
     const newErrors = {}
@@ -17,7 +27,9 @@ export default function ContactForm () {
       newErrors.name = t('contact.errors.name') || 'Name must be at least 2 characters'
     }
     
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    // More robust email validation regex
+    // Validates: user@domain.tld format with proper TLD
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
     if (!emailRegex.test(email)) {
       newErrors.email = t('contact.errors.email') || 'Please enter a valid email address'
     }
