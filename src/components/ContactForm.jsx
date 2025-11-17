@@ -126,7 +126,7 @@ export default function ContactForm () {
         </form>
         
         <noscript>
-          <div style={{ marginTop: '1rem', padding: '1rem', background: '#fef3c7', borderRadius: '8px' }}>
+          <div className="noscript-warning">
             {t('contact.nojs') || 'JavaScript is disabled — please enable it or email us at hello@elmentor.org'}
           </div>
         </noscript>
