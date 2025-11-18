@@ -1,66 +1,66 @@
 {
   "nav": {
-    "hero": "[AUTOT] Home",
-    "about": "[AUTOT] About",
-    "circles": "[AUTOT] Circles",
-    "activities": "[AUTOT] Activities",
-    "founder": "[AUTOT] Founder",
-    "news": "[AUTOT] News",
-    "contact": "[AUTOT] Contact/Join",
-    "lang": "[AUTOT] العربية"
+    "hero": "الرئيسية",
+    "about": "من نحن",
+    "circles": "الدوائر",
+    "activities": "الأنشطة",
+    "founder": "المؤسس",
+    "news": "الأخبار",
+    "contact": "تواصل معنا",
+    "lang": "English"
   },
   "hero": {
-    "title": "[AUTOT] Elmentor Program",
-    "subtitle": "[AUTOT] A mentorship community for growth",
-    "cta": "[AUTOT] Join Now"
+    "title": "برنامج إلمنتور",
+    "subtitle": "مجتمع الإرشاد والتطوير المهني",
+    "cta": "انضم الآن"
   },
   "about": {
-    "title": "[AUTOT] About Elmentor",
-    "description": "[AUTOT] We support learners and mentors in a collaborative community."
+    "title": "عن إلمنتور",
+    "description": "ندعم المتعلمين والمرشدين في مجتمع تعاوني قائم على المشاركة والنمو المستمر."
   },
   "circles": {
-    "title": "[AUTOT] Circles",
+    "title": "الدوائر",
     "design": {
-      "title": "[AUTOT] Design",
-      "summary": "[AUTOT] Designers support"
+      "title": "التصميم",
+      "summary": "دعم ومساعدة المصممين"
     },
     "dev": {
-      "title": "[AUTOT] Developer",
-      "summary": "[AUTOT] Developers support"
+      "title": "التطوير",
+      "summary": "دعم ومساعدة المطورين"
     }
   },
   "activities": {
-    "title": "[AUTOT] Activities & Benefits",
+    "title": "الأنشطة والفوائد",
     "workshop": {
-      "title": "[AUTOT] Workshop"
+      "title": "ورش العمل"
     },
     "talk": {
-      "title": "[AUTOT] Guest Talk"
+      "title": "محادثات ضيوف"
     }
   },
   "founder": {
-    "title": "[AUTOT] Founder Story",
-    "name": "[AUTOT] Mohamed Radwan",
-    "role": "[AUTOT] Microsoft DevOps MVP, المؤسس — DevOps Visions & Elmentor Program",
-    "story": "[AUTOT] Mohamed Radwan هو Microsoft DevOps MVP ولديه خبرة تزيد عن 24 عامًا في مجال التكنولوجيا. أسس DevOps Visions وبرنامج Elmentor لتمكين المحترفين من خلال التوجيه والمشاركة المجتمعية."
+    "title": "قصة المؤسس",
+    "name": "محمد رضوان",
+    "role": "Microsoft DevOps MVP، المؤسس — DevOps Visions وبرنامج إلمنتور",
+    "story": "محمد رضوان هو Microsoft DevOps MVP ولديه خبرة تزيد عن 24 عامًا في مجال التكنولوجيا. أسس DevOps Visions وبرنامج إلمنتور لبناء مجتمع إرشادي يركز على المهارات العملية وأتمتة العمليات التقنية."
   },
   "news": {
-    "title": "[AUTOT] News & Updates",
+    "title": "الأخبار والتحديثات",
     "sample": {
-      "title": "[AUTOT] Launch Announcement"
+      "title": "إعلان الإطلاق"
     }
   },
   "contact": {
-    "title": "[AUTOT] Contact & Join",
-    "name": "[AUTOT] Full name",
-    "email": "[AUTOT] Email",
-    "message": "[AUTOT] How can we help?",
-    "submit": "[AUTOT] Send",
-    "success": "[AUTOT] Thanks — we'll be in touch!",
-    "error": "[AUTOT] An error occurred"
+    "title": "تواصل معنا وانضم",
+    "name": "الاسم الكامل",
+    "email": "البريد الإلكتروني",
+    "message": "كيف يمكننا مساعدتك؟",
+    "submit": "إرسال",
+    "success": "شكراً لك — سنتواصل معك قريباً!",
+    "error": "حدث خطأ ما"
   },
-  "contact.nojs": "[AUTOT] JavaScript is disabled — please enable it or email us at hello@elmentor.org",
+  "contact.nojs": "JavaScript معطل — يرجى تفعيله أو التواصل معنا عبر hello@elmentor.org",
   "footer": {
-    "copy": "[AUTOT] © Elmentor"
+    "copy": "© إلمنتور"
   }
 }
