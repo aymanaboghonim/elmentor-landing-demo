@@ -88,8 +88,8 @@ body{
 	animation:float 20s ease-in-out infinite;
 }
 @keyframes float{
-	0%, 100%{transform:translateY(0) translateX(0)}
-	50%{transform:translateY(-30px) translateX(30px)}
+	0%, 100%{transform:translate(0, 0)}
+	50%{transform:translate(30px, -30px)}
 }
 .hero-inner{
 	display:flex;
@@ -319,7 +319,7 @@ section h2::after{
 	transition:transform 0.3s ease;
 }
 .circle:hover{
-	transform:translateY(-8px);
+	transform:translateY(-2px);
 	box-shadow:var(--card-shadow-hover);
 }
 .circle:hover::before{
@@ -359,7 +359,6 @@ section h2::after{
 	gap:1rem;
 }
 .activities li:hover{
-	transform:translateX(8px);
 	box-shadow:var(--card-shadow-hover);
 	border-color:var(--accent-600);
 }
@@ -424,7 +423,6 @@ section h2::after{
 	font-size:2rem;
 }
 .news li:hover{
-	transform:translateY(-4px);
 	box-shadow:var(--card-shadow-hover);
 	border-color:var(--accent-600);
 }
