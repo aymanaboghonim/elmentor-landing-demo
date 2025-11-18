@@ -13,7 +13,12 @@
   "about": { "title": "About Elmentor", "description": "We support learners and mentors in a collaborative community." },
   "circles": { "title": "Circles", "design": { "title": "Design", "summary": "Designers support" }, "dev": { "title": "Developer", "summary": "Developers support" } },
   "activities": { "title": "Activities & Benefits", "workshop": { "title": "Workshop" }, "talk": { "title": "Guest Talk" } },
-  "founder": { "title": "Founder Story", "story": "Founder story content here." },
+  "founder": { 
+    "title": "Founder Story", 
+    "name": "Mohamed Radwan",
+    "role": "Microsoft DevOps MVP, Founder — DevOps Visions & Elmentor Program",
+    "story": "Mohamed Radwan is a Microsoft DevOps MVP with over 24 years of experience. He started DevOps Visions and the Elmentor Program to build a mentoring community focused on real-world skills, DevOps, and automation."
+  },
   "news": { "title": "News & Updates", "sample": { "title": "Launch Announcement" } },
   "contact": { "title": "Contact & Join", "name": "Full name", "email": "Email", "message": "How can we help?", "submit": "Send", "success": "Thanks — we'll be in touch!", "error": "An error occurred" },
   "contact.nojs": "JavaScript is disabled — please enable it or email us at hello@elmentor.org",

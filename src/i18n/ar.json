@@ -40,7 +40,9 @@
   },
   "founder": {
     "title": "[AUTOT] Founder Story",
-    "story": "[AUTOT] Founder story content here."
+    "name": "[AUTOT] Mohamed Radwan",
+    "role": "[AUTOT] Microsoft DevOps MVP, المؤسس — DevOps Visions & Elmentor Program",
+    "story": "[AUTOT] Mohamed Radwan هو Microsoft DevOps MVP ولديه خبرة تزيد عن 24 عامًا في مجال التكنولوجيا. أسس DevOps Visions وبرنامج Elmentor لتمكين المحترفين من خلال التوجيه والمشاركة المجتمعية."
   },
   "news": {
     "title": "[AUTOT] News & Updates",

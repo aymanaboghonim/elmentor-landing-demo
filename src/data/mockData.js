@@ -19,8 +19,11 @@ const mock = {
     { id: 'talk', title: 'Web Performance Talk', date: '2026-01-15' }
   ],
   founder: {
-    title: 'Founder Story',
-    story: 'Started by a group of mentors and learners, Elmentor is a safe place to collaborate and grow.'
+    title: 'About the Founder',
+    name: 'Mohamed Radwan',
+    role: 'Microsoft DevOps MVP, Founder — DevOps Visions & Elmentor Program',
+    image: 'https://raw.githubusercontent.com/ElmentorProgram/elmentorprogram.github.io/main/assets/founder/mohamed_radwan.jpg',
+    story: `Mohamed Radwan is a Microsoft DevOps MVP with over 24 years of experience in the tech industry. He's worked with more than 60 global enterprises and focuses on DevOps, Azure, Agile, and GitHub. Mohamed is passionate about automation and community contributions, and he founded DevOps Visions and the Elmentor Program to empower professionals through mentorship, collaborative knowledge sharing, and hands-on projects.`
   },
   news: [
     { id: 'n1', date: '2025-11-10', title: 'Elmentor Launch — Welcome!' },
